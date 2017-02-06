@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>SITE-IESS-Oficial</title>
+		 <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/home.css">	
+		<link rel="stylesheet" href="css/geral.css">
+		<link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
+		<link rel="stylesheet" href="css/plugins.css">
+	</head>
+	<body>
+
+		<nav class="menu-responsivo">
+			<ul>
+				<li><a href="index.html">Início</a></li>
+				<li><a href="sobre.html">A igreja</a></li>
+				<li><a href="portfolio.html">Projetos</a></li>
+				<li><a href="contato.html">Parceiro Fiel</a></li>
+				<li><a href="contato.html">Contato</a></li>
+			</ul>
+		</nav>		
+
+		//IMAGEM DO LOGO IESS
+
+		<div class="layout">
+			<header>
+				<div class="container">
+
+					<div class="logo wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s">
+						<a href="index.html">
+							<img src="images/logo1.png" alt="Logo Topo ">
+						</a>
+					</div>
+
+
+                    // MENU TOPO
+
+					<div class="links">
+						<nav>
+							<ul>
+								<li><a href="index.html">Início</a></li>
+								<li><a href="sobre.html">A igreja</a></li>
+								<li><a href="portfolio.html">Projetos</a></li>
+								<li><a href="contato.html">Parceiro Fiel</a></li>
+								<li><a href="contato.html">Contato</a></li>
+							</ul>
+						</nav>
+
+						<a class="toggle" href="javascript:;">
+							<span></span>
+							<span></span>
+							<span></span>
+						</a>
+	
+					</div>
+
+					
+
+                    
+
+				</div>
+
+				// MENSAGEM TOPO
+
+					<p>E Jesus, clamando outra vez com grande voz, entregou o espírito.
+Eis que o véu do santuário se rasgou em duas partes de alto a baixo; tremeu a terra, fenderam-se as rochas;
+E abriram-se os sepulcros, e muitos corpos de santos, que dormiam ressuscitaram.
+                                                                                                                                                               Mateus 27:50-52</p>
+				
+			</header>
+			
+			<main>
+				<section class="sobre">
+					<div class="container">
+						<div class="itens">			
+							
+							<div class="foto wow flipInX" data-wow-duration="1s" data-wow-delay="5s">
+								<img src="images/foto-tag-miolo.png" alt="Foto TAG">
+							</div>
+
+							<div class="icone-lapis wow flipInX" data-wow-duration="1s" data-wow-delay="1s">
+								<i class="fa fa-pencil"></i>
+							</div>
+
+							<div class="icone-codigo wow flipInX" data-wow-duration="1s" data-wow-delay="2s">
+								<i class="fa fa-code"></i>
+							</div>
+
+							<div class="icone-coracao wow flipInX" data-wow-duration="1s" data-wow-delay="3s">
+								<i class="fa fa-heart"></i>
+							</div>
+
+							<div class="icone-compartilhar wow flipInX" data-wow-duration="1s" data-wow-delay="4s">
+								<i class="fa fa-share-alt"></i>
+							</div>
+						</div>
+
+						<div class="textos">
+							<p><strong>Lorem ipsum dolor sit amet</strong>, consectetur adipisicing elit. Aut in laborum, quos corrupti omnis ipsum reiciendis? Aspernatur, sequi eius! Nobis veniam eius autem dolores, doloribus deserunt est ex ea voluptatem.</p>
+
+							<a href="#" class="botao medio"><i class="fa fa-eye"></i> Continue Lendo</a>
+						</div>
+					</div>
+				</section>
+			</main>
+			
+			<footer>
+				<div class="logo-rodape">
+					<a href="index.html">
+						<img src="images/bg-rodapé.png" alt="Imagem do Rodapé">
+					</a>
+
+					<p>2016 Todos os Direitos Reservados</p>
+				</div>
+				
+			</footer>
+		</div>
+
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="bower_components/wow/dist/wow.min.js"></script>
+		<script>
+			$(function(){				
+				$('.toggle').click(function(){
+					$('.layout').toggleClass('ativo');
+					$('.menu-responsivo').toggleClass('ativo');
+					$(this).toggleClass('ativo');
+				});
+				new WOW().init();
+			});
+		</script>
+	</body>
+</html>
